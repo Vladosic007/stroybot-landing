@@ -45,7 +45,7 @@ export function Navbar() {
           </span>
         </Link>
 
-        <nav className="flex items-center gap-5">
+        <nav className="hidden items-center gap-5 md:flex">
           {NAV_LINKS.map((link) => (
             <SmoothLink
               key={link.href}
@@ -59,9 +59,10 @@ export function Navbar() {
 
         <SmoothLink
           href="#cta"
-          className="group inline-flex items-center gap-1.5 rounded-full bg-signal px-4 py-2 text-sm font-bold text-ink-900 transition-all duration-200 hover:bg-signal-400 cursor-pointer"
+          className="group inline-flex items-center gap-1.5 rounded-full bg-signal px-3.5 py-2 text-xs font-bold text-ink-900 transition-all duration-200 hover:bg-signal-400 cursor-pointer sm:px-4 sm:text-sm"
         >
-          Открыть бота
+          <span className="hidden sm:inline">Открыть бота</span>
+          <span className="sm:hidden">В бота</span>
           <ArrowIcon />
         </SmoothLink>
         </div>

@@ -57,10 +57,10 @@ export function Steps() {
           <div className="inline-flex items-center gap-2 rounded-full border border-bone-50/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-bone-400">
             Начало работы
           </div>
-          <h2 className="h-display mt-5 text-balance text-5xl text-bone-50 sm:text-6xl lg:text-7xl">
+          <h2 className="h-display mt-5 text-balance text-4xl text-bone-50 sm:text-6xl lg:text-7xl">
             Начните за <span className="text-signal">3 шага</span>
           </h2>
-          <p className="mt-6 text-pretty text-lg text-bone-400 sm:text-xl">
+          <p className="mt-5 text-pretty text-base text-bone-400 sm:mt-6 sm:text-xl">
             От регистрации до контактов поставщика меньше получаса. Без
             обучения, без менеджеров, без подписки
           </p>

@@ -40,21 +40,21 @@ export function Cta() {
               </span>
             </div>
 
-            <h2 className="h-display mt-7 text-balance text-5xl text-bone-50 sm:text-6xl lg:text-7xl">
+            <h2 className="h-display mt-7 text-balance text-4xl text-bone-50 sm:text-6xl lg:text-7xl">
               Заходите прямо сейчас
               <br />и забирайте{" "}
               <span className="text-signal">максимальную выгоду</span>
             </h2>
 
-            <p className="mt-7 max-w-[55ch] text-pretty text-lg text-bone-400 sm:text-xl">
+            <p className="mt-6 max-w-[55ch] text-pretty text-base text-bone-400 sm:mt-7 sm:text-xl">
               Регистрация занимает минуту, первая заявка ещё две. Деньги,
               которые сэкономит конкуренция поставщиков, навсегда ваши
             </p>
 
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div className="mt-8 flex flex-col items-stretch gap-4 sm:mt-10 sm:flex-row sm:items-center">
               <Link
                 href="#"
-                className="group inline-flex items-center gap-2 rounded-full bg-signal px-8 py-4 text-base font-bold text-ink-900 transition-all duration-200 hover:bg-signal-400 cursor-pointer"
+                className="group inline-flex items-center justify-center gap-2 rounded-full bg-signal px-8 py-4 text-base font-bold text-ink-900 transition-all duration-200 hover:bg-signal-400 cursor-pointer"
               >
                 Открыть СтройБота в МАКС
                 <ArrowRight

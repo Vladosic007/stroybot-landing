@@ -50,7 +50,7 @@ export function Hero() {
   }, [mouseX, mouseY, reduceMotion]);
 
   return (
-    <section className="relative isolate overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-28 lg:pt-40">
+    <section className="relative isolate overflow-x-clip pt-24 pb-16 sm:pt-36 sm:pb-28 lg:pt-40">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-30 bg-grid-light bg-[size:48px_48px] opacity-50"
@@ -94,11 +94,11 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="mt-9 flex flex-wrap items-center gap-4"
+            className="mt-8 flex flex-col items-stretch gap-3 sm:mt-9 sm:flex-row sm:items-center sm:gap-4"
           >
             <SmoothLink
               href="#cta"
-              className="group inline-flex items-center gap-2 rounded-full bg-signal px-7 py-4 text-base font-bold text-ink-900 transition-all duration-200 hover:bg-signal-400 cursor-pointer"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-signal px-7 py-4 text-base font-bold text-ink-900 transition-all duration-200 hover:bg-signal-400 cursor-pointer"
             >
               Открыть СтройБота
               <svg
@@ -120,7 +120,7 @@ export function Hero() {
             </SmoothLink>
             <SmoothLink
               href="#workflow"
-              className="inline-flex items-center gap-2 rounded-full border border-bone-50/15 bg-transparent px-7 py-4 text-base font-semibold text-bone-50 transition-all duration-200 hover:bg-bone-50/5 cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-bone-50/15 bg-transparent px-7 py-4 text-base font-semibold text-bone-50 transition-all duration-200 hover:bg-bone-50/5 cursor-pointer"
             >
               Как это работает
             </SmoothLink>
@@ -136,7 +136,7 @@ export function Hero() {
           className="relative mx-auto flex w-full justify-center"
         >
           {/* Phone block (relative, фикс ширина для якоря карточек) */}
-          <div className="relative w-[320px]">
+          <div className="relative w-[260px] sm:w-[300px] lg:w-[320px]">
             {/* Yellow halo за phone */}
             <div
               aria-hidden
@@ -151,7 +151,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.7 }}
               style={{ x: cardTopX, y: cardTopY }}
-              className="pointer-events-none absolute -left-24 -top-6 z-30 w-[210px] rounded-2xl border border-bone-50/15 bg-ink-800/95 p-3 backdrop-blur-xl shadow-2xl shadow-black/50"
+              className="pointer-events-none absolute -left-6 -top-6 z-30 w-[170px] rounded-2xl border border-bone-50/15 bg-ink-800/95 p-3 backdrop-blur-xl shadow-2xl shadow-black/50 sm:-left-16 sm:w-[190px] lg:-left-24 lg:w-[210px]"
             >
               <div className="flex items-center gap-2 border-b border-bone-50/10 pb-2">
                 <div className="h-2 w-2 animate-pulse rounded-full bg-signal" />
@@ -171,7 +171,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.9 }}
               style={{ x: cardBotX, y: cardBotY }}
-              className="pointer-events-none absolute -right-24 -bottom-6 z-30 w-[230px] rounded-2xl border border-signal/40 bg-ink-800/95 p-3 backdrop-blur-xl shadow-2xl shadow-signal/20"
+              className="pointer-events-none absolute -right-6 -bottom-6 z-30 w-[180px] rounded-2xl border border-signal/40 bg-ink-800/95 p-3 backdrop-blur-xl shadow-2xl shadow-signal/20 sm:-right-16 sm:w-[200px] lg:-right-24 lg:w-[230px]"
             >
               <div className="flex items-center justify-between border-b border-bone-50/10 pb-2">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-bone-300">

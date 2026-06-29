@@ -64,10 +64,10 @@ export function Roles() {
           <div className="inline-flex items-center gap-2 rounded-full border border-bone-50/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-bone-400">
             Для кого
           </div>
-          <h2 className="h-display mt-5 text-balance text-5xl text-bone-50 sm:text-6xl lg:text-7xl">
+          <h2 className="h-display mt-5 text-balance text-4xl text-bone-50 sm:text-6xl lg:text-7xl">
             Две стороны одной сделки
           </h2>
-          <p className="mt-6 max-w-[55ch] text-pretty text-lg text-bone-400 sm:text-xl">
+          <p className="mt-5 max-w-[55ch] text-pretty text-base text-bone-400 sm:mt-6 sm:text-xl">
             Подрядчики получают рынок в одном окне. Поставщики получают
             квалифицированный трафик заявок. Обе стороны без комиссии
           </p>

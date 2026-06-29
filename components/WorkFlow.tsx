@@ -115,10 +115,10 @@ function StepRow({ step, reverse }: { step: Step; reverse: boolean }) {
         <div className="mb-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-signal">
           {step.kicker}
         </div>
-        <h3 className="h-display max-w-[14ch] text-balance text-4xl text-bone-50 sm:text-5xl lg:text-6xl">
+        <h3 className="h-display max-w-[14ch] text-balance text-3xl text-bone-50 sm:text-5xl lg:text-6xl">
           {step.title}
         </h3>
-        <p className="mt-6 max-w-[44ch] text-pretty text-base text-bone-400 sm:text-lg">
+        <p className="mt-4 max-w-[44ch] text-pretty text-base text-bone-400 sm:mt-6 sm:text-lg">
           {step.description}
         </p>
       </motion.div>
@@ -138,7 +138,7 @@ function StepRow({ step, reverse }: { step: Step; reverse: boolean }) {
 
 function PhoneMock({ bubbles }: { bubbles: ChatBubble[] }) {
   return (
-    <div className="relative w-full max-w-[320px]">
+    <div className="relative w-[260px] sm:w-[300px] lg:w-[320px]">
       {/* Yellow halo */}
       <div
         aria-hidden
@@ -224,10 +224,10 @@ function SectionHeader({
       <div className="inline-flex items-center gap-2 rounded-full border border-bone-50/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-bone-400">
         {kicker}
       </div>
-      <h2 className="h-display mt-5 text-balance text-5xl text-bone-50 sm:text-6xl lg:text-7xl">
+      <h2 className="h-display mt-5 text-balance text-4xl text-bone-50 sm:text-6xl lg:text-7xl">
         {title}
       </h2>
-      <p className="mt-6 text-pretty text-lg text-bone-400 sm:text-xl">
+      <p className="mt-5 text-pretty text-base text-bone-400 sm:mt-6 sm:text-xl">
         {subtitle}
       </p>
     </motion.div>
