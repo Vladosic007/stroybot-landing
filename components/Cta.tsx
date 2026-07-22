@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { BOT_URL } from "@/lib/config";
 
 export function Cta() {
   return (
@@ -52,8 +52,10 @@ export function Cta() {
             </p>
 
             <div className="mt-8 flex flex-col items-stretch gap-4 sm:mt-10 sm:flex-row sm:items-center">
-              <Link
-                href="#"
+              <a
+                href={BOT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 rounded-full bg-signal px-8 py-4 text-base font-bold text-ink-900 transition-all duration-200 hover:bg-signal-400 cursor-pointer"
               >
                 Открыть СтройБота в МАКС
@@ -62,7 +64,7 @@ export function Cta() {
                   strokeWidth={2.5}
                   aria-hidden
                 />
-              </Link>
+              </a>
 
               <div className="text-sm text-bone-400">
                 Без комиссии · Без подписки · Без посредников

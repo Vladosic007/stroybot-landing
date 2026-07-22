@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { HardHat, Truck, ArrowRight } from "lucide-react";
 import { SmoothLink } from "./SmoothLink";
+import { BOT_URL } from "@/lib/config";
 
 const CONTRACTOR_PERKS = [
   "Заявка собирает рынок сама, без обзвона",
@@ -82,7 +83,7 @@ export function Roles() {
             sub="Бригады, прорабы, генподряд, частные стройки"
             perks={CONTRACTOR_PERKS}
             ctaLabel="Я подрядчик"
-            ctaHref="#cta"
+            ctaHref={BOT_URL}
             iconAccent
           />
           <RoleCard
@@ -93,7 +94,7 @@ export function Roles() {
             sub="Базы, склады, дилеры, региональные сети"
             perks={VENDOR_PERKS}
             ctaLabel="Я поставщик"
-            ctaHref="#cta"
+            ctaHref={BOT_URL}
           />
         </div>
       </div>
@@ -162,6 +163,8 @@ function RoleCard({
       <div className="mt-auto pt-8">
         <SmoothLink
           href={ctaHref}
+          target="_blank"
+          rel="noopener noreferrer"
           className={`group/cta inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-bold transition-all duration-200 cursor-pointer ${
             iconAccent
               ? "bg-signal text-ink-900 hover:bg-signal-400"

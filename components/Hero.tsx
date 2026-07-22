@@ -9,6 +9,7 @@ import {
 } from "framer-motion";
 import { useEffect, useState } from "react";
 import { SmoothLink } from "./SmoothLink";
+import { BOT_URL } from "@/lib/config";
 
 type Bubble = { side: "in" | "out"; text: string; meta?: string };
 
@@ -97,7 +98,9 @@ export function Hero() {
             className="mt-8 flex flex-col items-stretch gap-3 sm:mt-9 sm:flex-row sm:items-center sm:gap-4"
           >
             <SmoothLink
-              href="#cta"
+              href={BOT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-signal px-7 py-4 text-base font-bold text-ink-900 transition-all duration-200 hover:bg-signal-400 cursor-pointer"
             >
               Открыть СтройБота

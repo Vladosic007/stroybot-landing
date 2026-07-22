@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { SmoothLink } from "./SmoothLink";
+import { BOT_URL } from "@/lib/config";
 
 const NAV_LINKS = [
   { label: "Как это работает", href: "#workflow" },
@@ -58,7 +59,9 @@ export function Navbar() {
         </nav>
 
         <SmoothLink
-          href="#cta"
+          href={BOT_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="group inline-flex items-center gap-1.5 rounded-full bg-signal px-3.5 py-2 text-xs font-bold text-ink-900 transition-all duration-200 hover:bg-signal-400 cursor-pointer sm:px-4 sm:text-sm"
         >
           <span className="hidden sm:inline">Открыть бота</span>
