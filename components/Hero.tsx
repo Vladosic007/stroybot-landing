@@ -103,7 +103,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-signal px-7 py-4 text-base font-bold text-ink-900 transition-all duration-200 hover:bg-signal-400 cursor-pointer"
             >
-              Открыть СтройБота
+              Открыть ТурбоСнаб
               <svg
                 width="16"
                 height="16"
@@ -251,12 +251,12 @@ function PhoneMock() {
             <div className="flex items-center gap-2">
               <div className="flex h-7 w-7 items-center justify-center rounded-full bg-signal/20 ring-1 ring-signal/40">
                 <span className="text-[10px] font-extrabold text-signal">
-                  СБ
+                  ТС
                 </span>
               </div>
               <div>
                 <div className="text-xs font-semibold text-bone-50">
-                  СтройБот
+                  ТурбоСнаб
                 </div>
                 <div className="text-[10px] text-signal">в сети</div>
               </div>

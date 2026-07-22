@@ -42,7 +42,7 @@ export function Navbar() {
         <Link href="#" className="flex items-center gap-2 cursor-pointer">
           <LogoMark />
           <span className="text-base font-bold tracking-tight">
-            СТРОЙ<span className="text-signal">БОТ</span>
+            ТУРБО<span className="text-signal">СНАБ</span>
           </span>
         </Link>
 

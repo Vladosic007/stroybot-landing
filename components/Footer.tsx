@@ -6,7 +6,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-container flex-col items-center justify-between gap-6 container-px text-sm text-bone-500 sm:flex-row">
         <div className="flex items-center gap-3">
           <span className="font-bold text-bone-300">
-            СТРОЙ<span className="text-signal">БОТ</span>
+            ТУРБО<span className="text-signal">СНАБ</span>
           </span>
           <span className="text-bone-600">·</span>
           <span>© {new Date().getFullYear()} TAGIT</span>
